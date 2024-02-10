@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jobs_id: 
+  position: MyString
+  date_start: 2024-02-06
+  date_end: 2024-02-06
+
+two:
+  jobs_id: 
+  position: MyString
+  date_start: 2024-02-06
+  date_end: 2024-02-06

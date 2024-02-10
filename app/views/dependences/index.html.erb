@@ -1,0 +1,9 @@
+<!-- app/views/dependences/index.html.erb -->
+
+<h1>Lista de Dependencias</h1>
+
+<ul>
+  <% @dependences.each do |dependence| %>
+    <li><%= dependence.dependence_name %></li>
+  <% end %>
+</ul>
