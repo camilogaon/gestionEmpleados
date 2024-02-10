@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html, body {
+  height: 100%; /* Asegura que el cuerpo de la página ocupe toda la altura disponible */
+  margin: 0; /* Elimina los márgenes predeterminados */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.two-column-container {
+  display: flex; /* Usa Flexbox para el diseño */
+  height: 100%; /* Hace que el contenedor ocupe toda la altura de la página */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-column {
+  flex: 0 0 20%; /* La primera columna ocupa el 20% del ancho */
+  background-color: #f0f0f0; /* Color de fondo de la columna izquierda */
+  padding: 10px; /* Espacio interno */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.right-column {
+  flex: 1; /* La segunda columna ocupa el espacio restante */
+  background-color: #ccc; 
+  padding: 10px; 
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
